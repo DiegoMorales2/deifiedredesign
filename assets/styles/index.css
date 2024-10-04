@@ -148,11 +148,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 430px;
   padding: 2rem 1rem;
   margin-top: 2rem;
   background-color: #232323;
   color: #FEFFF6;
+  width: 100%;
+}
+
+.overtext p {
+  max-width: 430px;
 }
 
 .view-text {
@@ -206,7 +210,7 @@ body {
   margin: 2rem 0;
   width: 100%;
   overflow: visible;
-  max-width: 390px;
+  min-width: 390px;
 }
 
 .cardimg {
@@ -731,4 +735,56 @@ padding: 1rem;
 
 footer li {
   margin-top: .5rem;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .menubtn {
+    display: none;
+  }
+
+  .desktoplinks {
+    display: flex;
+    padding: .3rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .desktoplinks:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+  .desktopnav {
+    border: solid 1px #d1d3c1;
+    justify-content: flex-end;
+    gap: 0;
+    width: fit-content;
+    padding: .2rem;
+    border-radius: 8px;
+  }
+
+  .headernav {
+    border-bottom: solid 1px #d1d3c1;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 1rem;
+  }
+
+  .desktoplogo {
+    justify-self: flex-start;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .hero-section img {
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    top: 300px;
+  }
+
 }
