@@ -314,6 +314,15 @@ body {
   margin-top: 1.5rem;
 }
 
+.seeservices-container a{
+  display: flex;
+  width: 100%;
+  justify-content:flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
 .seeservices-container {
   display: flex;
   width: 100%;
@@ -321,6 +330,7 @@ body {
   align-items: center;
   color: white;
   margin-top: 1.5rem;
+  text-decoration: none;
 }
 
 .expertise-section {
