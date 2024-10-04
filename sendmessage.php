@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $project = $_POST['project'];
 
     // Send the email (you might need to configure your server or use an email API like PHPMailer)
-    $to = "youremail@example.com"; // Change this to your email address
+    $to = "info@deifieddesign.com"; // Change this to your email address
     $subject = "New Contact Request from $name";
     $message = "Name: $name\nEmail: $email\nPhone: $phone\nCompany: $company\n\nProject Description:\n$project";
     $headers = "From: $email";
