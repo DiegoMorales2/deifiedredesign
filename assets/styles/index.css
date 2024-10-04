@@ -6,3 +6,407 @@
     font-variation-settings:
       "wdth" 100; */
   
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Mono', sans-serif;
+  overflow-x: hidden;
+  background-color: #232323;
+  scroll-behavior: smooth;
+}
+
+.headernav {
+  background-color: #FEFFF6;
+}
+
+.mobilelinks, .desktoplinks {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.sidebar {
+  display: none;
+  z-index: 999;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+} 
+
+.sidebar li:first-child {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.mobilelinks {
+  font-size: 2rem;
+}
+
+.mobilelinks:active {
+  font-weight: 900;
+  color: #EC8117;
+}
+
+.desktopnav {
+  
+  border-bottom: solid 1px #EBEDD9 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.desktoplinks {
+  display: none;
+}
+
+.hero-section img {
+  display: none;
+}
+
+.hero-section {
+  background-color: #FEFFF6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 3rem 0 3rem 0;
+}
+
+.hero-text span {
+  color: #101010;
+  font-family: "Bricolage Grotesque";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  }
+
+.hero-text h1 {
+  color: #585854;
+  font-family: "Bricolage Grotesque";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  text-wrap: nowrap;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+}
+
+
+.contact-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  overflow: visible;
+}
+
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #585854;
+  border-radius: 95px;
+  padding: .4rem;
+  overflow: visible;
+}
+
+.circle-container:hover {
+  transform: translateY(-5px);
+  overflow-y: visible;
+}
+
+.play-btn-container {
+  background-color: #232323;
+  margin-left: 2rem;
+}
+
+.overtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 430px;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #232323;
+  color: #FEFFF6;
+}
+
+.view-text {
+  font-weight: 500;
+}
+
+.arrow-container {
+  display: none;
+}
+
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFFF6;
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: solid 1px #EBEDD9;
+}
+
+.project-title-container h2 {
+  color: #232323;
+  font-family: "Bricolage Grotesque";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  width: 100%;
+  overflow: visible;
+  max-width: 390px; /* Set the max width for the card */
+}
+
+.cardimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; /* Let the height adjust based on the image aspect ratio */
+  border-radius: 32px;
+  overflow: hidden; /* Prevent image overflow beyond the border radius */
+  box-shadow: 3.381px 2.704px 5.071px 0px #D6D7D5;
+}
+
+.cardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  display: block;
+  transform: scale(1.3);
+}
+
+.nsaimg img {
+  transform: scale(1.2)
+}
+
+.cardinfo { 
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardinfo h3 {
+  color: #000;
+  font-family: "Bricolage Grotesque";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardtabcontainer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.tabs {
+  border: solid 1px;
+  padding: .2rem .5rem .2rem .5rem;
+  border-radius: 8px;
+}
+
+.breaker {
+  width: 100%;
+  height: 65px;
+  border-radius: 0px 0px 40px 40px;
+  background: #FEFFF6;
+  box-shadow: 0px 27px 15.2px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.wecaresection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.wecaretitle-container h2{
+  color: #EC8117;
+  font-family: "DM Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+}
+
+.wecaretitle-container h1 {
+  color: #FFF;
+  font-family: "Bricolage Grotesque";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.wecaretitle-container svg 
+{
+  padding-top: .3rem;
+  padding-right: .3rem;
+}
+
+.wecaretitle-container p {
+  color: #FEFFF6;
+  font-family: "DM Mono";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.5rem;
+}
+
+.seeservices-container {
+  display: flex;
+  width: 100%;
+  justify-content:flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.expertise-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expertise-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  width: 96%;
+}
+
+.expertise-title-container h2 {
+  font-family: "Bricolage Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.expertise-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.exp-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 88%;
+  background: url(../images/card-svg-grey.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  border-radius: 2rem;
+}
+
+.exp-webdesign-card {
+  background: url(../images/card-svg-purp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  border-radius: 2rem;
+}
+
+.exp-card-header {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+}
+
+.exp-card-header h2 {
+  color: #B0EA34;
+  font-family: "Bricolage Grotesque";
+  font-size: 41.621px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.webdesign-card-header h2 {
+  color: white;
+}
+
+.exp-card-img {
+  width: 92%;
+  height: 219.377px;
+  border-radius: 1.3rem;
+  overflow: hidden;
+}
+
+.exp-card-info {
+  width: 92%;
+  margin: 1rem 0;
+  color: white;
+  border-top: solid 1px;
+  padding: 1rem 0 0 0;
+}
