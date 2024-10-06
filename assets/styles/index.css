@@ -11,6 +11,7 @@
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -96,6 +97,7 @@ body {
   font-size: 42px;
   font-style: normal;
   font-weight: 800;
+  cursor: pointer;
   }
 
 .hero-text h1 {
@@ -106,6 +108,17 @@ body {
   font-weight: 800;
   text-wrap: nowrap;
 }
+
+.hero-text span:hover {
+  color: #ff8c19;
+
+  }
+
+  .hero-text span:active {
+    font-size: 30px;
+  }
+
+
 
 .contact-container {
   display: flex;
@@ -324,7 +337,7 @@ body {
   justify-content:flex-start;
   align-items: center;
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 0;
   text-decoration: none;
 }
 .seeservices-container {
@@ -333,7 +346,7 @@ body {
   justify-content:flex-start;
   align-items: center;
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 0;
   text-decoration: none;
 }
 
@@ -737,10 +750,36 @@ footer li {
   margin-top: .5rem;
 }
 
+.breakercards {
+  display: none;
+}
+
+.seeallservices-container p {
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.seeallservices-container p:hover {
+  color: #bebebe;
+}
+
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
 
 @media only screen and (min-width: 800px) {
   .menubtn {
     display: none;
+  }
+
+  .breakercards {
+    display: flex;
   }
 
   .desktoplinks {
@@ -758,7 +797,7 @@ footer li {
   .desktopnav {
     border: solid 1px #d1d3c1;
     justify-content: flex-end;
-    gap: 0;
+
     width: fit-content;
     padding: .2rem;
     border-radius: 8px;
@@ -770,6 +809,7 @@ footer li {
     justify-content: flex-end;
     align-items: center;
     display: flex;
+    gap: 1rem;
     padding-right: 1rem;
   }
 
@@ -780,11 +820,198 @@ footer li {
     top: 0;
   }
 
-  .hero-section img {
-    display: flex;
-    z-index: 99;
-    position: absolute;
-    top: 300px;
+  .hero-section  {
+    /* background: linear-gradient(rgba(254, 255, 246, 0.925), rgba(254, 255, 246, 0.925)), 
+                url(https://media.giphy.com/media/fWttq2DXZQkpzBLpCd/giphy.gif?cid=790b76112znzuer0xgxumjtc1afbuwhdyu40w9b5b4v9rln9&ep=v1_gifs_search&rid=giphy.gif&ct=g); */
+
+    background: linear-gradient(rgba(254, 255, 246, 0.925), rgba(254, 255, 246, 0.925)), 
+                url(https://media.giphy.com/media/shmRHlrmPLrSy1njg5/giphy.gif?cid=ecf05e47rs71ekyvqon5jgvf7mnt66y1wtorvv9njjh6h3s9&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
   }
+
+  .nav-cta {
+  color: #ff8c19;
+  font-family: "DM Mono";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -2px;
+  }
+
+  #tmbreakercontact {
+    display: flex;
+  }
+
+  .cardbottom {
+    margin-bottom: none;
+}
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+
+  .hero-text span {
+    text-align: center;
+    font-size: 64px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .contact-container-over {
+    display: flex;
+  }
+  
+  .circle-container {
+    border: solid 1px #bebeb7;
+    width: fit-content;
+  }
+
+  .nav-cta:hover {
+    background-color: #000000;
+    color: #ff8c19;
+  }
+
+  .view-text p{
+    width: fit-content;
+    color: #FEFFF6;
+  }
+
+  .overtext {
+    justify-content: space-around;
+  }
+
+  .overtextpara{
+    width: 300px;
+  }
+
+  .projects-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-snap-type: x mandatory; /* Snap effect for scrolling */
+    flex-direction: row;
+    padding-left: 0; /* Remove padding */
+}
+
+.cardcontainer {
+    min-width: 600px; /* Ensure the card width */
+    margin-right: 20px; /* Spacing between cards */
+    scroll-snap-align: start; /* Ensure that each card snaps into view properly */
+}
+
+.cardcontainer:first-child {
+    margin-left: 20px; /* Add margin only to the first card */
+}
+
+.cardbreaker {
+  box-shadow: none;
+  background-color: #FEFFF6;
+}
+
+.cardbreaker img {
+  fill: #000000;
+  background-color: #FEFFF6;
+  display: none;
+}
+
+
+  .project-title-container {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .project-title-container h2 {
+    font-size: 42px;
+  }
+
+  .wecaresection {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .seeallservices-container {
+    width: 300px;
+  }
+
+  .seeservices-container svg {
+    margin-top: 1.5rem;
+  }
+
+  .wecaretitle-container h1 {
+    font-size: 42px;
+  }
+
+  .expertise-title-container {
+    justify-content: flex-start;
+  }
+
+  .expertise-title-container h2 {
+    font-size: 42px;
+  }
+
+  .expertise-card-container {
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+  }
+
+  .exp-cards {
+    min-width: 200px; /* Ensure the card width */
+    margin-right: 0px; /* Spacing between cards */
+    scroll-snap-align: start; /* Ensure that each card snaps into view properly */
+}
+
+.wecare-2 {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+
+.review-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+  margin-bottom: 6rem;
+}
+.reviewcards {
+  max-width: 350px;
+  transform: translateX(0px);
+}
+
+.creativeteam-section h2 {
+  font-size: 42px;
+}
+
+.tmcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.tmimg img {
+  transform: scale(1.5);
+}
+
+.tmimg {
+  overflow: hidden;
+}
+
+.tmcard-container {
+  min-height: 700px;
+  margin: 0px;
+}
+
 
 }
