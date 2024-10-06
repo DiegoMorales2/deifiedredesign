@@ -705,6 +705,13 @@ footer a:hover {
   font-style: italic;
 }
 
+.tmcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .link-container {
   display: flex;
   gap: 1rem;
