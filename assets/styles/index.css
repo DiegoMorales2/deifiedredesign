@@ -72,6 +72,10 @@ body {
   display: none;
 }
 
+.desktopnav-cta {
+  display: none;
+}
+
 .hero-section img {
   display: none;
 }
@@ -806,6 +810,10 @@ footer li {
 @media only screen and (min-width: 800px) {
   .menubtn {
     display: none;
+  }
+
+  .desktopnav-cta {
+    display: flex;
   }
 
   .breakercards {
