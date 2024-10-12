@@ -73,3 +73,8 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
+res.cookie('name', 'value', {
+    sameSite: 'None', 
+    secure: true
+});

@@ -499,15 +499,15 @@
             <h1>GET IN <span class="highlight">TOUCH</span></h1>
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="phone" placeholder="Phone Number" required>
-                    <input type="text" name="company" placeholder="Your Company">
+                    <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+                    <input type="text" name="company" placeholder="Your Company" autocomplete="organization">
                 </div>
                 <div class="form-group">
-                    <textarea name="project" placeholder="Project Description" rows="5" required></textarea>
+                    <textarea name="project" placeholder="Project Description" rows="5" autocomplete="off" required></textarea>
                 </div>
                 <button type="submit" class="submit-button">Send Message</button>
                 <div id="responseMessage"></div> <!-- To display the success/error message -->
